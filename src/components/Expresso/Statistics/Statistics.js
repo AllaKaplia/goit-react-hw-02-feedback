@@ -1,12 +1,12 @@
-import css from '../Statistics/Statistics.module.css';
+import { Text } from "./Statistics.styled";
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     return<div>
-        <span className={css.textFeedback}>Good: {good}</span>
-        <span className={css.textFeedback}>Neutral: {neutral}</span>
-        <span className={css.textFeedback}>Bad: {bad}</span>
-        <span className={css.textFeedback}>Total: {total}</span>
-        <span className={css.textFeedback}>Positive feedback: {positivePercentage}%</span>
+        <Text>Good: {good}</Text>
+        <Text>Neutral: {neutral}</Text>
+        <Text>Bad: {bad}</Text>
+        <Text>Total: {total}</Text>
+        <Text>Positive feedback: {positivePercentage}%</Text>
     </div>
 }
 
