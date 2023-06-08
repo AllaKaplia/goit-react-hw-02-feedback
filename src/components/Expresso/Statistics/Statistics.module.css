@@ -1,9 +1,0 @@
-.textFeedback {
-    font-size: 20px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.textFeedback:hover, .textFeedback:focus {
-    color: #4CAF50;
-}
