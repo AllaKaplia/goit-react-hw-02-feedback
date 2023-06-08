@@ -1,12 +1,12 @@
 import React from 'react';
-import css from '../Section/Section.module.css';
+import { Title, Box } from './Section.styled';
 
 const Section = ({ title, children }) => {
   return (
-    <div className={css.box}>
-      <h2>{title}</h2>
+    <Box>
+      <Title>{title}</Title>
       {children}
-    </div>
+    </Box>
   );
 };
 
