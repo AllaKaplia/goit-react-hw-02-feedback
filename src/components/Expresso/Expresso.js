@@ -13,9 +13,9 @@ class Expresso extends Component {
   };
 
   state = {
-    good: this.props.initialGood,
-    neutral: this.props.initialNeutral,
-    bad: this.props.initialBad,
+    good: '',
+    neutral: '',
+    bad: '',
   };
 
   addFeedback = (feedbackType) => {
