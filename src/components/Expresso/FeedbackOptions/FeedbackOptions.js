@@ -1,17 +1,16 @@
 import React from 'react';
-import css from './FeedbackOptions.module.css';
+import { Buttons } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, addFeedback }) => {
     return (
-      <div className='boxBtn'>
+      <div>
         {options.map(option => (
-          <button
+          <Buttons
             key={option}
             onClick={() => addFeedback(option)}
-            className={css.button}
           >
             {option}
-          </button>
+          </Buttons>
         ))}
       </div>
     );
